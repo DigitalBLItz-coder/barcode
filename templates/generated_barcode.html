@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Genereted barcodes </title>
+        <link rel="stylesheet" href="static/style.css">
+    
+    <body>
+        <div class="container">
+            <header>
+                <!-- Ensure that the correct path to the logo is used -->
+                <img src="static/logo.png" alt="Custom Logo" class="logo">
+                <h1>Generated Barcodes</h1>
+          </header>
+
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 21px;
+        background-color: #214d7e;
+        color: rgb(242, 245, 241);
+    }
+</style>
+<body>
+    <h1></h1>
+    <img src="{{.BarcodePath}}" alt="Generated Barcode">
+
+    <!-- Save button -->
+    <button onclick="saveImage()">Save</button>
+    
+     <script>
+        // Save the image to the local file system
+        function saveImage() {
+            const link = document.createElement('a');
+            link.href = "{{.BarcodePath}}";
+            link.download = 'generated_barcode.png';
+            link.click();
+        }
+    </script>
+</body>
+</html>

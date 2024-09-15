@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capol Barcodes Generator </title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Ensure that the correct path to the logo is used -->
+            <img src="static/logo.png" alt="Custom Logo" class="logo">
+            <h1>Barcodes Generator</h1>
+        </header>
+
+        <form action="/barcode" method="post">
+            <div class="form-grid">
+                <!-- Barcode 1 -->
+                <div class="barcode-form">
+                    <h2>Barcode 1</h2>
+                    <label>Section:</label>
+                    <input type="text" name="data1" value="">
+                    
+                    <label>Width:</label>
+                    <input type="number" name="width1" value="400">
+                    
+                    <label>Height:</label>
+                    <input type="number" name="height1" value="200">
+                    
+                    <label>Section Color:</label>
+                    <input type="color" name="padding_color1" value="#42DB00">
+                    
+                    <label>Font:</label>
+                    <select name="font_choice1">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+
+                    <label>Text Color:</label>
+                    <input type="color" name="text_color1" value="#000000">
+                    
+                    <label>Text Size:</label>
+                    <input type="number" name="text_size1" value="50">
+                    
+                    <label>Bold Text:</label>
+                    <input type="checkbox" name="bold1">
+                </div>
+
+                <!-- Barcode 2 -->
+                <div class="barcode-form">
+                    <h2>Barcode 2</h2>
+                    <label>Section:</label>
+                    <input type="text" name="data2" value="">
+                    
+                    <label>Width:</label>
+                    <input type="number" name="width2" value="400">
+                    
+                    <label>Height:</label>
+                    <input type="number" name="height2" value="200">
+                    
+                    <label>Section Color:</label>
+                    <input type="color" name="padding_color2" value="#FFEA00">
+                    
+                    <label>Font:</label>
+                    <select name="font_choice2">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+
+                    <label>Text Color:</label>
+                    <input type="color" name="text_color2" value="#000000">
+                    
+                    <label>Text Size:</label>
+                    <input type="number" name="text_size2" value="50">
+                    
+                    <label>Bold Text:</label>
+                    <input type="checkbox" name="bold2">
+                </div>
+
+                <!-- Barcode 3 -->
+                <div class="barcode-form">
+                    <h2>Barcode 3</h2>
+                    <label>Section:</label>
+                    <input type="text" name="data3" value="">
+                    
+                    <label>Width:</label>
+                    <input type="number" name="width3" value="400">
+                    
+                    <label>Height:</label>
+                    <input type="number" name="height3" value="200">
+                    
+                    <label>Section Color:</label>
+                    <input type="color" name="padding_color3" value="#ff7B00">
+                    
+                    <label>Font:</label>
+                    <select name="font_choice3">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+
+                    <label>Text Color:</label>
+                    <input type="color" name="text_color3" value="#000000">
+                    
+                    <label>Text Size:</label>
+                    <input type="number" name="text_size3" value="50">
+                    
+                    <label>Bold Text:</label>
+                    <input type="checkbox" name="bold3">
+                </div>
+
+                <!-- Barcode 4 -->
+                <div class="barcode-form">
+                    <h2>Barcode 4</h2>
+                    <label>Section:</label>
+                    <input type="text" name="data4" value="">
+                    
+                    <label>Width:</label>
+                    <input type="number" name="width4" value="400">
+                    
+                    <label>Height:</label>
+                    <input type="number" name="height4" value="200">
+                    
+                    <label>Section Color:</label>
+                    <input type="color" name="padding_color4" value="#ff0000">
+                    
+                    <label>Font:</label>
+                    <select name="font_choice4">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+
+                    <label>Text Color:</label>
+                    <input type="color" name="text_color4" value="#000000">
+                    
+                    <label>Text Size:</label>
+                    <input type="number" name="text_size4" value="50">
+                    
+                    <label>Bold Text:</label>
+                    <input type="checkbox" name="bold4">
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Generate Barcode</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
